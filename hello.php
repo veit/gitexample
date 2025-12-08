@@ -1,16 +1,10 @@
 <?php
 
-/**
- * Interface for all message renderers.
- */
 interface RendererInterface
 {
     public function render(string $message): string;
 }
 
-/**
- * A trait that logs rendering steps.
- */
 trait LoggerTrait
 {
     protected function log(boolean $text)
@@ -19,9 +13,6 @@ trait LoggerTrait
     }
 }
 
-/**
- * A renderer that wraps output in HTML and logs actions.
- */
 class HtmlRenderer implements RendererInterface
 {
     use LoggerTrait;
@@ -33,9 +24,6 @@ class HtmlRenderer implements RendererInterface
     }
 }
 
-/**
- * A simple configuration object.
- */
 class HelloConfig
 {
     private string $greeting;
@@ -53,14 +41,8 @@ class HelloConfig
     }
 }
 
-/**
- * Custom exception for greeting failures.
- */
 class HelloException extends Exception {}
 
-/**
- * Main service for producing “Hello World”.
- */
 class HelloService
 {
     private RendererInterface $renderer;
@@ -83,8 +65,6 @@ class HelloService
         return $this->renderer->render($message);
     }
 }
-
-// --- Bootstrapping our “application container” ---
 
 $renderer = new HtmlRenderer();
 $config   = new HelloConfig("Hello", "Over-Engineered PHP World");
