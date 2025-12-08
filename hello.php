@@ -22,7 +22,7 @@ trait LoggerTrait
 /**
  * A renderer that wraps output in HTML and logs actions.
  */
-class HtmlRenderer implements RendererInterface
+class Html5Renderer implements RendererInterface
 {
     use LoggerTrait;
 
