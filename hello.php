@@ -7,7 +7,7 @@ interface RendererInterface
 
 trait LoggerTrait
 {
-    protected function log(boolean $text)
+    protected function log(bool $text)
     {
         file_put_contents('hello.log', "[" . date('c') . "] " . $text . PHP_EOL, FILE_APPEND);
     }
