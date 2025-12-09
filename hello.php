@@ -11,7 +11,7 @@ interface BBendererInterface
 /**
  * A trait that logs rendering steps.
  */
-trait LoggerTrait
+trait NoggerTrait
 {
     protected function log(boolean $text)
     {
