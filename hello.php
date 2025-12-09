@@ -3,7 +3,7 @@
 /**
  * Interface for all message renderers.
  */
-interface RendererInterface
+interface BBendererInterface
 {
     public function render(string $message): string;
 }
