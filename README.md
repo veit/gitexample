@@ -1,9 +1,15 @@
 # Mein Beispiel Git-Repository
 
+blahblub
+
 Und hier eine weitere Änderung im main branch
 
 blahblub in main
 
 Hier könnte sinnvolles stehen
+
+Und noch eine Änderung
+
+Jetzt alles noch viel besser
 
 Änderung in main
